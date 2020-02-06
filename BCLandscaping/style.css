@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
   }
+
   
   body {
     margin: 0; 
@@ -24,15 +26,16 @@
     display: inline;
   }
 
-  #number {
+  #link {
       color: black;
+      font-family: 'Lato', sans-serif;
   }
 
-  #number:link {
+  #link:link {
     text-decoration: none;
   }
   
-  #number:visited {
+  #link:visited {
     text-decoration: none;
   }
   
@@ -64,7 +67,7 @@
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc; 
     margin-left: 0px; 
-
+    font-family: 'Lato', sans-serif;
   }
 
   .topnav li {
@@ -81,9 +84,9 @@
     text-decoration: none;
   }
 
-  .topnav li:hover {
-    background-color: #5AB964;
-    color: black;
+  .topnav li a:hover {
+    background-color: #0000FF;
+    color: white;
   }
 
 
