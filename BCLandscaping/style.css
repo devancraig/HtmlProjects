@@ -1,45 +1,90 @@
 * {
     box-sizing: border-box;
+    
   }
   
   body {
-    margin: 0;
+    margin: 0; 
   }
-  
-  /* Style the header */
-  .header {
-    background-color: #3c8b3c;
-    background-image: linear-gradient(#3c8b3c,#a0ffa0);
+
+  .phone_header{
+    width: 100%;
+    background-color: #363535;
     padding: 10px;
+    height: 35px;
+  }
+
+  #phone {
+    height: 15px;
+    display: inline;
+  }
+
+  #email {
+    height: 15px;
+    display: inline;
   }
 
   #number {
       color: black;
   }
 
-  .header-text {
-    text-align: center;
+  #number:link {
+    text-decoration: none;
   }
   
-  /* Style the top navigation bar */
+  #number:visited {
+    text-decoration: none;
+  }
+  
+  .header{
+    /*#3F3E3E*/
+    background-color: #3F3E3E;
+    height: 220px;
+    padding: 10px;
+  }
+
+
+  #logo {
+    height: 200px;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .topnav {
-    overflow: hidden;
-    background-color: #333;
-    
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    background-color: #DADADC;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
+    margin-left: 0px; 
+
   }
-  
-  /* Style the topnav links */
+
+  .topnav li {
+    display: inline-block;
+    text-align:center; 
+  }
+
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
+
+  .topnav li:hover {
+    background-color: #5AB964;
     color: black;
   }
+
+
+
