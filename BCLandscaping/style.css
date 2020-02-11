@@ -12,23 +12,36 @@
   .phone_header{
     width: 100%;
     background-color: #363535;
-    padding: 10px;
+    padding: 8px;
     height: 35px;
   }
 
   #phone {
-    height: 15px;
+    height: 16px;
     display: inline;
   }
 
   #email {
-    height: 15px;
+    height: 16px;
     display: inline;
   }
 
+  #facebook {
+    height: 20px;
+    padding-bottom: 2px;
+    display: inline;
+    
+  }
   #link {
       color: black;
       font-family: 'Lato', sans-serif;
+      border-right: 1.5px solid #000;
+      padding: 5px;
+      padding-right: 5px;
+  }
+
+  #link:last-child {
+    border-right: 0;
   }
 
   #link:link {
@@ -55,19 +68,21 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    vertical-align: middle;
   }
-  
+
+
   .topnav {
     width: 100%;
     display: inline-block;
     text-align: center;
     padding: 0;
     list-style: none;
-    background-color: #DADADC;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc; 
-    margin-left: 0px; 
+    background-color: #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333; 
     font-family: 'Lato', sans-serif;
+    padding-top: 4px;
   }
 
   .topnav li {
@@ -78,16 +93,100 @@
   .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px 14px 14px;
+    margin-left: 2px;
+    margin-right: 4px;
     text-decoration: none;
+    border-right: 2px solid #000;
+  }
+
+  .topnav li:last-child a{
+    border-right: 0;
   }
 
   .topnav li a:hover {
-    background-color: #0000FF;
+    background-color: #7CFC00;
     color: white;
   }
+
+  .topnav .active {
+    background-color: #7CFC00;
+    color: #A9A9A9;
+  }
+
+  .topnav li a:link {
+    text-decoration: none;
+  }
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.1s;
+  animation-name: fade;
+  animation-duration: 5.1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
 
 
 

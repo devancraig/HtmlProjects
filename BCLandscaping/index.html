@@ -3,24 +3,96 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>BC LANDSCAPING</title>
 </head>
 <body>
+     <!-- Nav -->
     <div class="phone_header">
-        <img id="phone" src="Photos/phone.png" alt="phone"><a id="link" href="tel:12089011037">(208)-901-1037</a>
-        <img id="email" src="Photos/email.png" alt="email"><a id="link" href="mailto:bclandscapingtv@gamil.com"> bclandscapingtv@gamil.com</a>
+        <a id="link" href="tel:12089011037"><img id="phone" src="Photos/phone.png" alt="phone"> (208)-901-1037</a>
+        <a id="link" href="mailto:bclandscapingtv@gamil.com"><img id="email" src="Photos/email.png" alt="email"> bclandscapingtv@gamil.com</a>
+        <a id="link" href="https://www.facebook.com/bclandscapingtv/"><img id="facebook" src="Photos/facebook.png" alt="email"></a>
     </div>
     <div class="header">
-        <img id="logo" src="Photos/cropped-logo.png" alt="logo">
-    </div>      
-      
+        <img id="logo" src="Photos/logo-cropped3.png" alt="logo">
+    </div>     
+    
     <div class="topnav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">RESIDENTIAL</a></li>
-        <li><a href="#">COMMERCIAL</a></li>
-        <li><a href="About.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+      <li><a class="active" href="index.html">HOME</a></li>
+      <li><a href="residential.html">RESIDENTIAL</a></li>
+      <li><a href="commercial.html">COMMERCIAL</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
     </div>
+
+    <!-- End nav -->
+
+    <!-- Slide Show -->
+    
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="Photos/start.jpg" style="width:100%">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
       
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Photos/start1.jpg" style="width:100%">
+        <!-- <div class="text">Caption Two</div> -->
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Photos/start2.jpg" style="width:100%">
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+      
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      <!-- End of slide show -->
+
+      <div class="mission-statement">
+        <h2>Our Mission</h2>
+        <div class="box">
+          <p>Our Mission at BC Landscaping is to provide you with the Highest level of Customer Service, 
+            along with the Best Quality Products on the market. “Your yard is our Business 
+            and we intend to keep it looking it's best Year Round!” 
+            Call (208) 901-1037 for any of your landscaping needs!!!</p>
+        </div>
+      </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 </body>
+
 </html>
